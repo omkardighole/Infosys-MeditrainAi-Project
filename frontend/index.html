@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditrain AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1 style="color: aquamarine; font-family:'Times New Roman', Times, serif;">Meditrain AI Chatbot</h1>
+            <p>Your friendly AI assistant</p>
+        </header>
+        <div class="chat-box" id="chat-box">
+            <!-- Chat messages dynamically appear here -->
+        </div>
+        <div class="typing-indicator" id="typing-indicator">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message..."  style="background-color: rgb(131, 186, 196);"/>
+            <button onclick="sendMessage()" style="background-color:rgb(6, 59, 41);">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
