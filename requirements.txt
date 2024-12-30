@@ -14,4 +14,4 @@ LangChain
 dotenv
 requests
 json
-Groq SDK
+
