@@ -92,5 +92,11 @@ def favicon():
     return '', 204
 
 # Main entry point
+# if __name__ == "__main__":
+#     app.run(debug=True)
 if __name__ == "__main__":
     app.run(debug=True)
+else:
+    # Ensure app is recognized by Gunicorn
+    app = app
+
