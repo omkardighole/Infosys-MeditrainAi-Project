@@ -1,17 +1,9 @@
-python-dotenv
-groq
-requests
-Flask_cors
 Flask
-gunicorn
-
-# Backend : htts://xyz.com
+Flask-CORS
 langchain==0.1.16
 langchain-core
 langchain-groq
-app
-LangChain
-dotenv
+python-dotenv
 requests
-json
+gunicorn
 
