@@ -5,11 +5,11 @@ Meditrain AI is an intelligent chatbot that simulates a doctor's role by assessi
 
  Features
 
-- AI-Powered Symptom Analysis**: Analyzes user input for health-related suggestions.
-- Prescription Simulation**: Offers responses similar to those from healthcare professionals.
-- Dynamic User Interface**: Intuitive chat-based interaction.
-- Postman API Support**: Easily test API responses for debugging.
-- Customizable Design**: Includes a `style.css` for personalized UI.
+- AI-Powered Symptom Analysis: Analyzes user input for health-related suggestions.
+- Prescription Simulation: Offers responses similar to those from healthcare professionals.
+- Dynamic User Interface: Intuitive chat-based interaction.
+- Postman API Support: Easily test API responses for debugging.
+- Customizable Design: Includes a `style.css` for personalized UI.
 
 ---
 
