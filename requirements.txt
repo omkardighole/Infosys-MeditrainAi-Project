@@ -9,3 +9,9 @@ gunicorn
 langchain==0.1.16
 langchain-core
 langchain-groq
+app
+LangChain
+dotenv
+requests
+json
+Groq SDK
