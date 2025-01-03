@@ -82,9 +82,9 @@ def response():
         return jsonify({"error": "An error occurred while processing your request."}), 500
 
 # Add a home route (GET /)
-@app.route("/", methods=["GET"])
+@app.route("/")
 def home():
-    return jsonify({"message": "Meditrain AI backend is running!"})
+    return render_template("index.html")
 
 # Handle favicon.ico requests to avoid warnings
 @app.route("/favicon.ico")
