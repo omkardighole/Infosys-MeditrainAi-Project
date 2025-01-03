@@ -11,8 +11,8 @@ function sendMessage() {
     // Show typing indicator
     toggleTypingIndicator(true);
 
-    // Make API request to backend
-    fetch("http://127.0.0.1:5000/response", {
+    // Make API request to the deployed backend
+    fetch("https://meditrain-ai-11.onrender.com/response", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -25,7 +25,11 @@ function sendMessage() {
             toggleTypingIndicator(false);
 
             // Display chatbot's response
-            displayMessage(data.response, "bot");
+            if (data.response) {
+                displayMessage(data.response, "bot");
+            } else {
+                displayMessage("The chatbot did not return a valid response.", "bot");
+            }
         })
         .catch((error) => {
             console.error("Error:", error);
@@ -33,7 +37,7 @@ function sendMessage() {
             // Hide typing indicator
             toggleTypingIndicator(false);
 
-            displayMessage("Oops! Something went wrong.", "bot");
+            displayMessage("Oops! Something went wrong. Please try again later.", "bot");
         });
 }
 
